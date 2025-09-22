@@ -1,0 +1,145 @@
+/* Lightbox2 v2.11.3 | by Lokesh Dhakar | http://lokeshdhakar.com/projects/lightbox2/ | MIT Licensed */
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 4px;
+}
+.lightbox a img {
+  border: none;
+}
+.lb-outerContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: white;
+}
+.lb-outerContainer.lb-hide-close {
+  opacity: 0.9;
+}
+.lb-dataContainer {
+  padding: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #fff;
+}
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.lb-details {
+  width: 70%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+.lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+.lb-number {
+  display: block;
+  clear: both;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999;
+}
+.lb-controls {
+  width: 30%;
+  float: left;
+}
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.lb-prev,
+.lb-next {
+  width: 49%;
+  height: 100%;
+  cursor: pointer;
+  background-image: url(../images/prev.png);
+  background-repeat: no-repeat;
+  background-position: left 50%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.lb-prev {
+  float: left;
+}
+.lb-next {
+  float: right;
+  background-image: url(../images/next.png);
+  background-position: right 50%;
+}
+.lb-prev:hover,
+.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.lb-loader,
+.lb-close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  outline: none;
+}
+.lb-loader {
+  background: url(../images/loading.gif) no-repeat center;
+  left: 50%;
+  top: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+}
+.lb-close {
+  background: url(../images/close.png) no-repeat center;
+  text-align: right;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.lb-close:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Base image for prev/next and loading/closing */
+/* NOTE: These images are typically in public/lib/lightbox/images/ */
+/* You might need to add these images to public/lib/lightbox/images/ if they are missing */

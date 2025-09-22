@@ -1,0 +1,125 @@
+/* Styling Halaman Register Modern oleh Gemini */
+:root {
+    --primary-color: #6d8c3b; /* DIUBAH */
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --font-family: 'Poppins', sans-serif;
+}
+
+body.auth-page {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: var(--light-color);
+}
+
+.auth-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0; /* Menambah padding untuk layar kecil */
+}
+
+#animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* DIUBAH: Gradien hijau */
+    background: linear-gradient(45deg, #384d1a, #4e6a24, #66883a, #84a95a, #cddcae);
+    background-size: 400% 400%;
+    animation: gradient-flow 15s ease infinite;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Form Register dengan Efek Glassmorphism (LEBAR) */
+.register-form-container {
+    background: var(--glass-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    max-width: 850px; /* Lebar untuk 3 kolom */
+    width: 100%;
+    z-index: 2;
+    animation: fade-in 0.8s ease-out;
+}
+
+.register-form-container h2 { font-weight: 600; text-align: center; }
+.form-label { font-weight: 500; }
+
+.form-control {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--glass-border);
+    color: var(--light-color);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder { color: rgba(255, 255, 255, 0.5); }
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--light-color);
+    box-shadow: 0 0 0 0.25rem rgba(109, 140, 59, 0.2); /* DIUBAH */
+    border-color: var(--primary-color);
+}
+
+.btn-primary, .btn-secondary-custom {
+    padding: 0.8rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+/* DITAMBAHKAN Aturan untuk warna tombol */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(109, 140, 59, 0.3); /* DIUBAH */
+}
+
+.register-form-container a {
+    color: #a5d6a7; /* DIUBAH: Hijau lebih terang untuk link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-form-container a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn-secondary-custom {
+    background-color: transparent;
+    border: 1px solid var(--glass-border);
+}

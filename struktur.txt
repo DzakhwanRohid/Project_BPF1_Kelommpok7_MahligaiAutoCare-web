@@ -1,0 +1,130 @@
+ProjectBpwMVC/MahligaiAutoCare/
+├── app/
+│   ├── Controllers/
+│   │   ├── AuthController.php             
+│   │   ├── HomeController.php            
+│   │   ├── ServiceController.php          
+│   │   ├── BookingController.php          
+│   │   ├── AdminController.php           
+│   │   ├── AdminBookingController.php      
+│   │   ├── AdminCustomerController.php   
+│   │   ├── AdminServiceController.php      
+│   │   ├── AdminSuggestionController.php   
+│   │   ├── AdminUserController.php   
+│   │   ├── AdminGalleryController.php  
+│   │   └── AdminReportController.php      
+│   │
+│   ├── Models/
+│   │   ├── BaseModel.php                  
+│   │   ├── User.php                       
+│   │   ├── Customer.php                   
+│   │   ├── Service.php                    
+│   │   ├── Booking.php   
+|   |   ├── Gallery.php               
+│   │   └── Suggestion.php                 
+│   │
+│   ├── Core/
+│   │   ├── Application.php                 
+│   │   ├── Controller.php                  
+│   │   ├── Database.php                    
+│   │   ├── Request.php                     
+│   │   ├── Response.php                    
+│   │   ├── Router.php                      
+│   │   └── SessionManager.php              
+│   │
+|   ├── Helpers/
+|   |    ├── Uploader.php
+|   |    └── ViewHelper.php 
+|   |
+│   ├── Views/
+│   │   ├── auth/
+│   │   │   ├── login.php
+│   │   │   └── register.php
+│   │   │
+│   │   ├── home/
+│   │   │   ├── index.php            
+│   │   │   ├── about.php                   
+│   │   │   ├── contact.php                 
+│   │   │   ├── blog.php                    
+│   │   │   ├── feature.php                 
+│   │   │   ├── team.php                    
+│   │   │   ├── testimonial.php             
+│   │   │   └── 404.php                     
+│   │   │
+│   │   ├── services/
+│   │   │   └── index.php                
+│   │   │
+│   │   ├── bookings/
+│   │   │   ├── book.php                   
+│   │   │   └── user_bookings.php          
+│   │   │
+│   │   ├── admin/             
+│   │   │   ├── bookings/
+|   |   |   |   ├── index.php    
+│   │   │   │   └── reject_form.php       
+│   │   │   ├── customers/
+│   │   │   │   └── index.php             
+│   │   │   ├── services/
+│   │   │   │   └── index.php  
+|   |   |   ├── Gallery/
+|   |   |   |   ├── edit.php 
+|   |   |   |   └── index.php
+|   |   |   |
+│   │   │   ├── suggestions/
+│   │   │   │   └── index.php             
+│   │   │   ├── users/
+│   │   │   │   └── index.php              
+│   │   │   ├── reports/
+│   │   │   │   ├── bookings.php            
+│   │   │   │   └── service_stats.php      
+│   │   │   └── dashboard.php
+|   |   |
+│   │   └── layouts/                       
+│   │       ├── admin_header.php            
+│   │       ├── admin_layout.php                 
+│   │       ├── admin_sidebar.php                 
+│   │       ├── auth_layout.php            
+│   │       ├── footer.php           
+│   │       ├── header.php
+|   |       ├── main_layout.php
+|   |       ├── page_header.php             
+│   │       └── modal_access_denied.php     
+│   
+├── config/
+│   └── app.php                           
+├── public/
+│   ├── css/
+│   │   ├── bootstrap.min.css
+|   |   ├── login.css
+|   |   ├── register.css
+│   │   └── style.css
+│   │
+│   ├── js/
+|   |   ├── login.js
+|   |   ├── register.js
+│   │   └── main.js
+│   │
+│   ├── lib/
+|   |   ├── animate/
+|   |   ├── easing/
+|   |   ├── lightbox/
+|   |   ├── owlcarousel/
+|   |   ├── waypoints/
+|   |   └── wow/
+|   |
+│   ├── scss/
+|   |   └── boostrap.scss
+│   │
+│   ├── img/
+│   │   └── ... (gambar-gambar aplikasi)
+|   |
+│   ├── uploads/
+|   |   ├── gallery/
+│   │   └── payment_proofs/
+│   │
+│   ├── .htaccess                         
+│   └── index.php                          
+│
+├── .htaccess                               
+└── autoload.php                     
+    

@@ -97,6 +97,8 @@ class AdminBookingController extends Controller
                 $result = $this->bookingModel->updateBookingWithServices($bookingId, $bookingData, $serviceIds);
                 $message = "Pemesanan ID #{$bookingId} berhasil diperbarui.";
             }   
+
+            
             if (!$result) {
                 throw new Exception("Gagal menyimpan perubahan ke database.");
             }
